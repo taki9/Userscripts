@@ -235,7 +235,7 @@ export default class OMDb {
     }
 
     // API Key and return JSON
-    Queries.push(`apikey=${this._config.api_key}`, 'r=json')
+    Queries.push(`apikey=${this._config.api_key}`)
 
     // return final URL
     const finalURL = `${this._config.api_url}${Parameters.join('/')}${Queries.length > 0 ? `?${Queries.join('&')}` : ''}`
